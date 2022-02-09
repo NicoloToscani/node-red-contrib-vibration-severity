@@ -1,0 +1,60 @@
+<script type="text/javascript">
+    RED.nodes.registerType('vibration-velocity',{
+        category: 'vibration',
+        color: '#009999',
+        defaults: {
+            name: {value:""},
+            classType: {value:"",required:true},
+            unitMeasure: {value:"",required:true}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "serial.png",
+        label: function() {
+            return this.name||"vibration-velocity";
+        },
+        <!--When the config screen is opened-->
+        oneditprepare: function() {
+        
+            
+            }).trigger("change");
+        }, 
+        
+        <!--When the config screen is closed ('done' button)-->
+        oneditsave: function () {
+               
+        }
+          
+    });
+</script>
+
+<script type="text/x-red" data-template-name="measure">
+        
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    
+    <div class="form-row">
+        <label for="node-input-classType"><i class="icon-tag"></i> Device</label>
+        <select id="node-input-classType" name="node-input-classType">
+           <option value="class_I">Class I - Small machines</option>
+           <option value="class_II">Class II - Medium machines</option>
+           <option value="calss_III">Class III - Large rigid machines</option>
+           <option value="class_IV">Class IV - Large Soft Foundation</option>
+        </select>
+    </div>
+    
+    <div class="form-row">
+        <label for="node-input-unitMeasure"><i class="icon-tag"></i> Device</label>
+        <select id="node-input-unitMeasure" name="node-input-unitMeasure">
+           <option value="in_s">in/s</option>
+           <option value="mm_s">mm/s</option>
+        </select>
+    </div>
+    
+</script>
+
+<script type="text/x-red" data-help-name="vibration-velocity">
+    <p>This node resumes the configuration parameters that are necessary to poll a Siemens SENTRON series over Modbus TCP/IP. To use this node:<br>1. Enter Unit ID corresponding to the configured Unit ID in the device.<br>2. Select device type. <br>3. Select which information you want to request from the device.<br>4. Add more node to select more data.</p>
+</script>
