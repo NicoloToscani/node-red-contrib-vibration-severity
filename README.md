@@ -28,4 +28,10 @@ Wire the input of the `vibration-velocity` to ....... todo .
 ### Measure
 ![data-config](docs/measure-config.png)
 
+### Message object 
+![data-config](docs/message-format.png)
+
+### Sample flow
+![sample-flow](docs/sample-flow.png)
+
 
