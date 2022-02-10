@@ -21,28 +21,28 @@ module.exports = function(RED) {
               if(settings.unitMeasure == "in_s"){
               
                  // Good threshold
-                 if(msg.payload >= 0.01 && msg.payload <= 0.03){
+                 if(msg.payload > 0.01 && msg.payload <= 0.04){
                    
                    msg.payload = "good"
                  
                  }
                  
                  // Satisfactory threshold
-                 if(msg.payload > 0.03 && msg.payload <= 0.07){
+                 if(msg.payload > 0.04 && msg.payload <= 0.11){
                    
                    msg.payload = "satisfactory"
                  
                  }
                  
                  // Satisfactory threshold
-                 if(msg.payload > 0.07 && msg.payload <= 0.18){
+                 if(msg.payload > 0.11 && msg.payload <= 0.28){
                    
                    msg.payload = "unsatisfactory"
                  
                  }
                  
                  // Unaccettable threshold
-                 if(msg.payload > 0.18 && msg.payload <= 1.77){
+                 if(msg.payload > 0.28 && msg.payload <= 1.77){
                    
                    msg.payload = "unaccettable"
                  
@@ -51,7 +51,35 @@ module.exports = function(RED) {
               }
               
               // Unit measure: mms/s
-              else if(settings.unitMeasure == "in_s"){
+              else if(settings.unitMeasure == "mm_s"){
+              
+                // Good threshold
+                 if(msg.payload > 0.28 && msg.payload <= 1.12){
+                   
+                   msg.payload = "good"
+                 
+                 }
+                 
+                 // Satisfactory threshold
+                 if(msg.payload > 1.12 && msg.payload <= 2.80){
+                   
+                   msg.payload = "satisfactory"
+                 
+                 }
+                 
+                 // Satisfactory threshold
+                 if(msg.payload > 2.80 && msg.payload <= 7.10){
+                   
+                   msg.payload = "unsatisfactory"
+                 
+                 }
+                 
+                 // Unaccettable threshold
+                 if(msg.payload > 7.10 && msg.payload <= 45.9){
+                   
+                   msg.payload = "unaccettable"
+                 
+                 }
               
               }
               
@@ -63,10 +91,66 @@ module.exports = function(RED) {
               // Unit measure: in/s
               if(settings.unitMeasure == "in_s"){
               
+                // Good threshold
+                 if(msg.payload > 0.01 && msg.payload <= 0.07){
+                   
+                   msg.payload = "good"
+                 
+                 }
+                 
+                 // Satisfactory threshold
+                 if(msg.payload > 0.07 && msg.payload <= 0.18){
+                   
+                   msg.payload = "satisfactory"
+                 
+                 }
+                 
+                 // Satisfactory threshold
+                 if(msg.payload > 0.18 && msg.payload <= 0.44){
+                   
+                   msg.payload = "unsatisfactory"
+                 
+                 }
+                 
+                 // Unaccettable threshold
+                 if(msg.payload > 0.44 && msg.payload <= 1.77){
+                   
+                   msg.payload = "unaccettable"
+                 
+                 }
+              
               }
               
               // Unit measure: mms/s
-              else if(settings.unitMeasure == "in_s"){
+              else if(settings.unitMeasure == "mm_s"){
+              
+                // Good threshold
+                 if(msg.payload > 0.28 && msg.payload <= 1.80){
+                   
+                   msg.payload = "good"
+                 
+                 }
+                 
+                 // Satisfactory threshold
+                 if(msg.payload > 1.80 && msg.payload <= 4.50){
+                   
+                   msg.payload = "satisfactory"
+                 
+                 }
+                 
+                 // Satisfactory threshold
+                 if(msg.payload > 4.50 && msg.payload <= 11.2){
+                   
+                   msg.payload = "unsatisfactory"
+                 
+                 }
+                 
+                 // Unaccettable threshold
+                 if(msg.payload > 11.2 && msg.payload <= 45.9){
+                   
+                   msg.payload = "unaccettable"
+                 
+                 }
               
               }
             
@@ -78,10 +162,66 @@ module.exports = function(RED) {
               // Unit measure: in/s
               if(settings.unitMeasure == "in_s"){
               
+                // Good threshold
+                 if(msg.payload > 0.01 && msg.payload <= 0.11){
+                   
+                   msg.payload = "good"
+                 
+                 }
+                 
+                 // Satisfactory threshold
+                 if(msg.payload > 0.11 && msg.payload <= 0.28){
+                   
+                   msg.payload = "satisfactory"
+                 
+                 }
+                 
+                 // Satisfactory threshold
+                 if(msg.payload > 0.28 && msg.payload <= 0.70){
+                   
+                   msg.payload = "unsatisfactory"
+                 
+                 }
+                 
+                 // Unaccettable threshold
+                 if(msg.payload > 0.70 && msg.payload <= 1.77){
+                   
+                   msg.payload = "unaccettable"
+                 
+                 }
+                
               }
               
               // Unit measure: mms/s
-              else if(settings.unitMeasure == "in_s"){
+              else if(settings.unitMeasure == "mm_s"){
+              
+                // Good threshold
+                 if(msg.payload > 0.28 && msg.payload <= 2.80){
+                   
+                   msg.payload = "good"
+                 
+                 }
+                 
+                 // Satisfactory threshold
+                 if(msg.payload > 2.80 && msg.payload <= 7.10){
+                   
+                   msg.payload = "satisfactory"
+                 
+                 }
+                 
+                 // Satisfactory threshold
+                 if(msg.payload > 7.10 && msg.payload <= 18.0){
+                   
+                   msg.payload = "unsatisfactory"
+                 
+                 }
+                 
+                 // Unaccettable threshold
+                 if(msg.payload > 18.0 && msg.payload <= 45.9){
+                   
+                   msg.payload = "unaccettable"
+                 
+                 }
               
               }
               
@@ -93,10 +233,66 @@ module.exports = function(RED) {
               // Unit measure: in/s
               if(settings.unitMeasure == "in_s"){
               
+                // Good threshold
+                 if(msg.payload > 0.01 && msg.payload <= 0.18){
+                   
+                   msg.payload = "good"
+                 
+                 }
+                 
+                 // Satisfactory threshold
+                 if(msg.payload > 0.18 && msg.payload <= 0.44){
+                   
+                   msg.payload = "satisfactory"
+                 
+                 }
+                 
+                 // Satisfactory threshold
+                 if(msg.payload > 0.44 && msg.payload <= 1.10){
+                   
+                   msg.payload = "unsatisfactory"
+                 
+                 }
+                 
+                 // Unaccettable threshold
+                 if(msg.payload > 1.10 && msg.payload <= 1.77){
+                   
+                   msg.payload = "unaccettable"
+                 
+                 }
+              
               }
               
               // Unit measure: mms/s
-              else if(settings.unitMeasure == "in_s"){
+              else if(settings.unitMeasure == "mm_s"){
+              
+                // Good threshold
+                 if(msg.payload > 0.28 && msg.payload <= 4.50){
+                   
+                   msg.payload = "good"
+                 
+                 }
+                 
+                 // Satisfactory threshold
+                 if(msg.payload > 4.50 && msg.payload <= 11.2){
+                   
+                   msg.payload = "satisfactory"
+                 
+                 }
+                 
+                 // Satisfactory threshold
+                 if(msg.payload > 11.2 && msg.payload <= 28.0){
+                   
+                   msg.payload = "unsatisfactory"
+                 
+                 }
+                 
+                 // Unaccettable threshold
+                 if(msg.payload > 28.0 && msg.payload <= 45.9){
+                   
+                   msg.payload = "unaccettable"
+                 
+                 }
               
               }
               
