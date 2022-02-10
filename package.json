@@ -2,33 +2,26 @@
   "name": "node-red-contrib-vibration-severity",
   "version": "0.0.1",
   "description": "Node-RED node for evaluating vibration velocity severity based on ISO10816 guidance",
-  "author": "Nicolò Toscani",
-  "license": "MIT",
+  "main": "vibration-velocity.js",
   "node-red": {
     "nodes": {
       "vibration-velocity": "vibration-velocity.js"
     }
   },
-  "main": "vibration-velocity.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "node-red",
-    "vibration",
-    "iso10816",
-    "maintenance"
-  ],
-  "bugs": {
-    "email": "toscani.nicolo90@gmail.com"
-  },
-  "homepage": "https://github.com/NicoloToscani/node-red-contrib-vibration-severity#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NicoloToscani/node-red-contrib-vibration-severity.git"
   },
-  "dependencies": {},
-  "directories": {
-    "doc": "docs"
-  }
+  "keywords": [
+    "iso10816"
+  ],
+  "author": "Nicolò Toscani",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NicoloToscani/node-red-contrib-vibration-severity/issues"
+  },
+  "homepage": "https://github.com/NicoloToscani/node-red-contrib-vibration-severity#readme"
 }
