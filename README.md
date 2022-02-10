@@ -23,7 +23,7 @@ Wire the input of the `vibration-velocity` to ....... todo .
 ## Usage
 
 ### Class
-![data-config](docs/class-config.png)
+![data-config](docs/class-conf.png)
 
 ### Measure
 ![data-config](docs/measure-config.png)
