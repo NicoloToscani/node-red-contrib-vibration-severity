@@ -2,7 +2,7 @@
 Node-RED node for evaluating vibration velocity severity based on ISO10816 guidance
 
 ## Install
-You can install these nodes directly from the **Manage Palette** menu in the Node-RED interface.
+You can install this nodes directly from the **Manage Palette** menu in the Node-RED interface.
 
 Alternatively, run the following command in your Node-RED user directory - typically `~/.node-red` on Linux or `%HOMEPATH%\.nodered` on Windows
 
@@ -11,9 +11,9 @@ Alternatively, run the following command in your Node-RED user directory - typic
 ## How to use
 
 ### vibration-velocity
-Use the `vibration-velocity` node to configure which information you want to request from the device.
+Use `vibration-velocity` to receive and evaluate RMS Velocity (Vrms) from vibration sensor to identify a problem of unbalaced load, misalignment, loose mounting, soft foot, etc.
 
-Wire the input of the `vibration-velocity` to ....... todo .
+This node receives as input `payload` the value of vibration characteristic to monitor and produces as output the state of the system.
 
 ## ISO 10816
 **ISO 10816** provides guidance for evaluating vibration velocity severity motors, pumps, fans, compressors, gear boxes, blowers, dryers, presses and other machines that operate in the 10 to 1000 Hz frequency range.
@@ -28,7 +28,10 @@ Wire the input of the `vibration-velocity` to ....... todo .
 ### Measure
 ![data-config](docs/measure-config.png)
 
-### Message object 
+### Input message object 
+![data-config](docs/input-config.png)
+
+### Output message object 
 ![data-config](docs/message-format.png)
 
 ### Sample flow
