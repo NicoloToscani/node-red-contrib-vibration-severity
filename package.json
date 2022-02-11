@@ -16,7 +16,10 @@
     "url": "git+https://github.com/NicoloToscani/node-red-contrib-vibration-severity.git"
   },
   "keywords": [
-    "iso10816"
+    "iso10816",
+    "node-red",
+    "vibration",
+    "maintenance"
   ],
   "author": "Nicolò Toscani",
   "license": "MIT",
